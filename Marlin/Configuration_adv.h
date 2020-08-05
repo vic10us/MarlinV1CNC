@@ -3187,11 +3187,20 @@
   #define USER_DESC_3 "Home X&Y"
   #define USER_GCODE_3 "G28 X Y"
 
-  //#define USER_DESC_4 "Heat Bed/Home/Level"
-  //#define USER_GCODE_4 "M140 S" STRINGIFY(PREHEAT_2_TEMP_BED) "\nG28\nG29"
+  #define USER_DESC_4 "Turn Spindle ON"
+  #define USER_GCODE_4 "M106 P1 S255"
 
-  //#define USER_DESC_5 "Home & Info"
-  //#define USER_GCODE_5 "G28\nM503"
+  #define USER_DESC_5 "Turn Spindle OFF"
+  #define USER_GCODE_5 "M107 P1"
+
+  #define USER_DESC_6 "Turn Laser ON FULL"
+  #define USER_GCODE_6 "M106 P0 S255"
+
+  #define USER_DESC_7 "Turn Laser ON LOW"
+  #define USER_GCODE_7 "M106 P0 S5"
+
+  #define USER_DESC_8 "Turn Laser OFF"
+  #define USER_GCODE_8 "M107 P0"
 #endif
 
 /**
